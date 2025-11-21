@@ -91,7 +91,8 @@ Calculated fields and DAX measures:
 
 ## Hotel Dashboard 
 ---
-![Hotel Data Analysis Dashboard](./Dashboard%20screenshots/Screenshot%20(134).png)
+![Hotel Data Analysis Dashboard](./screenshots/Screenshot%20(134).png)
+
 
 ---
 
