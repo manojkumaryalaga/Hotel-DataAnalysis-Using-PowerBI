@@ -1,144 +1,112 @@
-# 🏨 Hotel Management Report | Power BI Dashboard
---
---
+# Hotel Management Dashboard (Power BI)
+
 ## Overview
+This Power BI project analyzes hotel performance across revenue, occupancy, customer types, and booking patterns.  
+It highlights how factors such as market segment, distribution channel, hotel type, country, and room category influence total revenue and operational efficiency.
 
-This Power BI dashboard provides a complete overview of hotel performance, focusing on revenue, room occupancy, booking behavior, and customer segmentation.  
-It helps hotel managers monitor operational performance across different segments such as market type, hotel type, customer type, room type, and distribution channel.
+---
 
---
-## 📁 Dataset Description
+## Dataset Description
+The dataset contains anonymized hotel booking records, room details, customer information, and revenue metrics.
 
-The dataset includes anonymized hotel operational records, including revenue metrics, occupancy data, market segments, room categories, and booking details.
-
---
 ### Key Columns
-
 - Total Revenue  
 - Week Nights Revenue  
 - Weekend Nights Revenue  
 - Total Occupied Rooms  
 - Average Days of Stay  
-- Market Segment (Online TA, Offline TA/TO, Direct, Groups, Corporate, etc.)  
+- Market Segment (Online TA, Offline TA/TO, Direct, Groups, Corporate)  
 - Distribution Channel (TA/TO, Direct, Corporate, GDS)  
 - Customer Type (Transient, Transient-Party, Contract, Group)  
-- Reserved Room Type (A, D, E, F, G…)  
+- Reserved Room Type (A, D, E, F, G, etc.)  
 - Hotel Type (City Hotel, Resort Hotel)  
-- Country (for revenue map visualization)  
+- Country  
 
---
-## 📐 Data Model and Measures
+Total Bookings: 119,390  
+Total Revenue: $26 Million  
+Avg Length of Stay: 3 Days  
 
-Common DAX measures used include:  
+---
 
+## Data Model and Measures
+Calculated fields and DAX measures:
 - Total Revenue = SUM(Revenue)  
 - Week Nights Revenue  
 - Weekend Nights Revenue  
 - Total Occupied Rooms  
 - Avg Days of Stay = AVERAGE(Stays)  
-- Revenue by Segment  
-- Revenue by Room Type  
-- Revenue by Distribution Channel  
+- Revenue by Market Segment  
 - Revenue by Country  
+- Revenue by Distribution Channel  
+- Revenue by Room Type  
 
---
+---
 
-## 📊 Dashboard Features (Based on Your Screenshot)
+## Dashboard Features
+- KPI Cards: Total Revenue, Weekday Revenue, Weekend Revenue, Occupied Rooms, Avg Stay  
+- Revenue by Market Segment  
+- Revenue by Distribution Channel  
+- Country-wise Revenue Map  
+- Customer Type Revenue Contribution  
+- Hotel Type Performance (City vs Resort Hotel)  
+- Room Type Revenue (A, D, E, F, etc.)  
+- Filters: Hotel Type, Room Type, Market Segment, Distribution Channel, Country  
 
-### 1. KPI Cards
-- Total Revenue: $26.0M  
-- Week Nights Revenue: $18.9M  
-- Weekend Nights Revenue: $7.1M  
-- Total Occupied Rooms: 75K  
-- Avg Days of Stay: 3  
+---
 
-### 2. Top 10 Countries by Total Revenue (Map Visualization)
-Geographical distribution of revenue highlighting major contributing countries:  
-Portugal, Spain, France, Italy, Germany, Belgium, Netherlands, Ireland, Switzerland (CHE)  
+## Insights Discovered
+1. Revenue Overview  
+   - Total revenue reached $26M, led primarily by Resort Hotels.  
+   - Weekday revenue dominates, showing strong business travel patterns.  
 
-### 3. Revenue by Market Segment
-Revenue contribution by segments:  
-- Online TA → $13.7M  
-- Offline TA/TO → $5.65M  
-- Direct → $4.10M  
-- Groups → $1.86M  
-- Corporate, Aviation, Complementary (smaller contributions)  
+2. Market Segment Behavior  
+   - Online Travel Agencies contribute the highest revenue share (~$13.7M).  
+   - Offline TA/TO and Direct bookings also play a major role in total revenue.  
 
-### 4. Total Revenue by Hotel Type (Donut Chart)
-- Resort Hotel → $14.4M (55.37%)  
-- City Hotel → $11.6M (44.63%)  
+3. Customer Profile Patterns  
+   - Transient customers generate the largest share of revenue.  
+   - Contract customers show stable but smaller revenue contribution.  
 
-### 5. Revenue by Distribution Channel
-- TA/TO: $20.8M  
-- Direct: $4.3M  
-- Corporate: $0.82M  
-- GDS: $0.03M  
-- Undefined: $0.6K  
+4. Distribution Channel Insights  
+   - TA/TO channels dominate revenue with over $20M contributed.  
+   - Corporate and GDS channels show lower but consistent activity.  
 
-### 6. Revenue by Customer Type
-- Transient → $19.33M  
-- Transient-Party → $5.05M  
-- Contract → $1.48M  
-- Group → $0.12M  
+5. Room Type Performance  
+   - Room Type A is the most heavily booked and highest revenue generator (~$14.5M).  
+   - Types D and E follow but at significantly lower contribution levels.  
 
-### 7. Revenue by Reserved Room Type (Tree Map)
-- Room Type A → $14.5M  
-- Room Type D → $6.0M  
-- Room Type E → $2.5M  
-- Other types (F, G, etc.) contribute smaller amounts  
+6. Geographic Insights  
+   - Portugal, Spain, France, Germany, and Italy are top revenue contributors.  
+   - Western Europe drives the majority of hotel business activity.  
 
---
-## 🔍 Insights Discovered
---
-### Revenue Insights
-- Total hotel revenue is $26M, with the majority generated from Resort Hotels  
-- Online TA brings the largest revenue share among market segments  
+---
 
-### Customer Behavior
-- Transient customers dominate overall revenue contribution  
-- Bookings via TA/TO channels significantly outperform other channels  
+## Tools Used
+- Power BI Desktop for data modeling and dashboard creation  
+- Power Query for cleanup and transformation  
+- DAX for KPIs and calculations  
+- Excel/CSV as the dataset source  
 
-### Geographical Insights
-- Western European countries contribute heavily to hotel revenue  
-- Countries like Portugal, Spain, France, Italy, and Germany are top performers  
+---
 
-### Room & Stay Insights
-- Room Type A dominates revenue generation  
-- Guests stay on average 3 days, indicating short-to-medium stay patterns  
+## Hotel Dashboard 
+---
+![Hotel Dashboard](./Dashboard/Screenshot134.png)
+---
 
---
-## 🛠️ Tools Used
---
-- Power BI Desktop  
-- Power Query (for ETL and modeling)  
-- DAX (for measures and KPIs)  
-- Excel/CSV dataset  
+## Business Value
+- Helps hotel management track revenue drivers and occupancy trends  
+- Supports pricing, forecasting, and marketing decisions  
+- Identifies high-performing customer groups and distribution channels  
+- Enables geographic targeting and channel optimization  
+- Improves overall operational efficiency  
 
---
-## 🖼️ Dashboard
---
-Insert your screenshot:  
+---
 
-![Hotel Management Dashboard](./Dashboard/Screenshot134.png)  
+## How to Run
+1. Open Hotel_Report.pbix in Power BI Desktop.  
+2. Load the dataset or update the file path via Data Source Settings.  
+3. Refresh the dashboard to view all KPIs and visuals.  
+4. Use slicers to analyze by market segment, hotel type, room type, or country.  
 
---
-
-## 💼 Business Value
---
-- Helps hotel management track revenue performance in real time  
-- Enables data-driven decisions for pricing, staffing, and marketing  
-- Highlights opportunities for optimizing room utilization  
-- Supports segmentation strategies to improve profitability  
-- Visualizes high-value channels and markets for targeted campaigns  
-
---
-## ▶️ How to Run
---
-1. Download the Hotel_Report.pbix file  
-2. Download the dataset from the /Dataset folder  
-3. In Power BI:  
-   - Home → Transform Data → Data Source Settings → Change Source  
-   - Update the file path to the dataset  
-   - Refresh the dashboard  
-4. Use slicers (Year, Market Segment, Room Type, Hotel Type, Metrics) to explore insights
---
+---
