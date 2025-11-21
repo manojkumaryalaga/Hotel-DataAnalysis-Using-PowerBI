@@ -1,5 +1,6 @@
 # 🏨 Hotel Management Report | Power BI Dashboard
 --
+--
 ## Overview
 
 This Power BI dashboard provides a complete overview of hotel performance, focusing on revenue, room occupancy, booking behavior, and customer segmentation.  
