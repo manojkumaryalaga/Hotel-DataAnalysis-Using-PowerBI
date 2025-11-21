@@ -1,17 +1,18 @@
 # 🏨 Hotel Management Report | Power BI Dashboard
-
-## Overview
 --
+## Overview
+
 This Power BI dashboard provides a complete overview of hotel performance, focusing on revenue, room occupancy, booking behavior, and customer segmentation.  
 It helps hotel managers monitor operational performance across different segments such as market type, hotel type, customer type, room type, and distribution channel.
+
 --
 ## 📁 Dataset Description
---
+
 The dataset includes anonymized hotel operational records, including revenue metrics, occupancy data, market segments, room categories, and booking details.
 
 --
 ### Key Columns
---
+
 - Total Revenue  
 - Week Nights Revenue  
 - Weekend Nights Revenue  
@@ -26,7 +27,7 @@ The dataset includes anonymized hotel operational records, including revenue met
 
 --
 ## 📐 Data Model and Measures
---
+
 Common DAX measures used include:  
 
 - Total Revenue = SUM(Revenue)  
@@ -42,7 +43,7 @@ Common DAX measures used include:
 --
 
 ## 📊 Dashboard Features (Based on Your Screenshot)
---
+
 ### 1. KPI Cards
 - Total Revenue: $26.0M  
 - Week Nights Revenue: $18.9M  
