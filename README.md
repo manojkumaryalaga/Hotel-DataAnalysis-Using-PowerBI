@@ -4,11 +4,12 @@
 --
 This Power BI dashboard provides a complete overview of hotel performance, focusing on revenue, room occupancy, booking behavior, and customer segmentation.  
 It helps hotel managers monitor operational performance across different segments such as market type, hotel type, customer type, room type, and distribution channel.
-
+--
 ## 📁 Dataset Description
 --
 The dataset includes anonymized hotel operational records, including revenue metrics, occupancy data, market segments, room categories, and booking details.
 
+--
 ### Key Columns
 --
 - Total Revenue  
@@ -23,6 +24,7 @@ The dataset includes anonymized hotel operational records, including revenue met
 - Hotel Type (City Hotel, Resort Hotel)  
 - Country (for revenue map visualization)  
 
+--
 ## 📐 Data Model and Measures
 --
 Common DAX measures used include:  
@@ -37,7 +39,7 @@ Common DAX measures used include:
 - Revenue by Distribution Channel  
 - Revenue by Country  
 
-(Your actual DAX formulas can be added here if required.)
+--
 
 ## 📊 Dashboard Features (Based on Your Screenshot)
 --
@@ -83,6 +85,7 @@ Revenue contribution by segments:
 - Room Type E → $2.5M  
 - Other types (F, G, etc.) contribute smaller amounts  
 
+--
 ## 🔍 Insights Discovered
 --
 ### Revenue Insights
@@ -101,6 +104,7 @@ Revenue contribution by segments:
 - Room Type A dominates revenue generation  
 - Guests stay on average 3 days, indicating short-to-medium stay patterns  
 
+--
 ## 🛠️ Tools Used
 --
 - Power BI Desktop  
@@ -108,13 +112,14 @@ Revenue contribution by segments:
 - DAX (for measures and KPIs)  
 - Excel/CSV dataset  
 
+--
 ## 🖼️ Dashboard
 --
 Insert your screenshot:  
 
 ![Hotel Management Dashboard](./Dashboard/Screenshot134.png)  
 
-(Replace with your actual image path)
+--
 
 ## 💼 Business Value
 --
@@ -124,6 +129,7 @@ Insert your screenshot:
 - Supports segmentation strategies to improve profitability  
 - Visualizes high-value channels and markets for targeted campaigns  
 
+--
 ## ▶️ How to Run
 --
 1. Download the Hotel_Report.pbix file  
@@ -133,3 +139,4 @@ Insert your screenshot:
    - Update the file path to the dataset  
    - Refresh the dashboard  
 4. Use slicers (Year, Market Segment, Room Type, Hotel Type, Metrics) to explore insights
+--
